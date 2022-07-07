@@ -25,6 +25,7 @@ class Login extends React.Component{
             window.location = "/home";
         }).catch((err)=>{
             console.log(err)
+            alert("Email or Password incorrect")
         })
     }
 
@@ -55,7 +56,7 @@ class Login extends React.Component{
                         </div>
                         <div className="main-row-text">
                             <h1>Alan English</h1>
-                            <p>Best English in the world</p>
+                            <p>The Most Effective English Learning</p>
                             <label>帳號</label>
                             <input
                                 name="email" 

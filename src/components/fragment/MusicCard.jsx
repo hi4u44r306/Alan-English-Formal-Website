@@ -8,7 +8,7 @@ import {Skeleton} from "@material-ui/lab";
 import Box from "@material-ui/core/Box";
 
 function MusicCard(props) {
-    const {name, img, author_name} = props.music;
+    const {name, img} = props.music;
 
     const [isHovered, setHovered] = useState(false);
 
@@ -50,7 +50,7 @@ function MusicCard(props) {
                         </div>
                         <React.Fragment>
                             <Name name={name} className={"song-name"} length={name.length}/>
-                            <Name name={author_name} className={"author-name"} length={author_name.length}/>
+                            {/* <Name name={author_name} className={"author-name"} length={author_name.length}/> */}
                         </React.Fragment>
                     </>
             }

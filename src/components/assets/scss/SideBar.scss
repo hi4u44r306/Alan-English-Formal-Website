@@ -13,13 +13,14 @@
     user-select: none;
   }
   .lib-sub {
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
+    margin: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     .MuiButton-startIcon{
-      color: #07689f;
+      font-size: 200px;
+      color: #e68a13;
     }
   }
   .aside-bar-container {

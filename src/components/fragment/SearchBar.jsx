@@ -43,7 +43,7 @@ const SearchBar = () => {
                                name={"searchQuery"}
                                value={searchQuery}
                                onChange={handleSearchQuery}
-                               placeholder={"Search a track..."}
+                               placeholder={"搜尋音軌..."}
                                type="text"
                                ref={searchRef}
                         />
@@ -55,7 +55,7 @@ const SearchBar = () => {
                 <div className={"SearchBar-customPlaceholderOpen"}
                      onClick={handleSearchBarOpen}>
                     <SearchSharpIcon style={{color: "grey"}} className="search-icon" fontSize="small"/>
-                    <p className={"hide"}>&nbsp;Search</p>
+                    <p className={"hide"}>&nbsp;搜尋音軌</p>
                 </div>
             }
             {

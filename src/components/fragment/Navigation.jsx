@@ -2,7 +2,7 @@ import React, {useContext, useState} from "react";
 import '../assets/scss/Navigation.scss';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import DropDownLanguageList from "./DropDownLanguageList";
+import DropDownClassList from "./DropDownClassList";
 import SearchBar from "./SearchBar";
 import Brand from "./Brand";
 import DropDownProfile from "./DropDownProfile";
@@ -41,13 +41,13 @@ function Navigation() {
                 <Button className={"Dropdown-btn"}
                         endIcon={isLanguageListOpen ? <ExpandMoreIcon/> : <ExpandLessIcon/>}>
                     <div className="wrapper">
-                        <p>Level of Classes</p>
+                        <p>習作本分類</p>
                     </div>
                 </Button>
                 {
                     isLanguageListOpen
                     &&
-                    <DropDownLanguageList/>
+                    <DropDownClassList/>
                 }
             </div>
             <div className="profile" onClick={handleOpenProfile}>

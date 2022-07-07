@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "../assets/scss/SideBar.scss";
 import SideBarOptions from "./SideBarOptions";
 import {ThemeContext} from "../../api/Theme";
-import {ExploreOutlined, HomeOutlined, PlaylistPlay, SearchOutlined} from "@material-ui/icons";
+import {ExploreOutlined, HomeOutlined, SearchOutlined} from "@material-ui/icons";
 
 function SideBar() {
     const useStyle = useContext(ThemeContext);
@@ -12,11 +12,11 @@ function SideBar() {
                 <p className={"p1"}>
                     <span>Library</span>
                 </p>
-                <SideBarOptions className={"lib-sub"} Icon={HomeOutlined} href={"/home"} title={"Home"} />
-                <SideBarOptions className={"lib-sub"} Icon={ExploreOutlined} href={"/home/about"}  title={"About"}/>
-                <SideBarOptions className={"lib-sub"} Icon={SearchOutlined} href={"/home/search"}  title={"Search"}/>
-                {/*<SideBarOptions className={"lib-sub"} Icon={AlbumIcon} href={"/home/album"}  title={"Album"}/>
-                <SideBarOptions className={"lib-sub"} Icon={EmojiPeopleIcon} href={"/home/artist"}  title={"Artist"}/>*/}
+                <SideBarOptions className={"lib-sub"} Icon={HomeOutlined} href={"/home"} title={"首頁"} />
+                <SideBarOptions className={"lib-sub"} Icon={ExploreOutlined} href={"/home/about"}  title={"關於"}/>
+                <SideBarOptions className={"lib-sub"} Icon={SearchOutlined} href={"/home/search"}  title={"搜尋"}/>
+                {/* {/*<SideBarOptions className={"lib-sub"} Icon={AlbumIcon} href={"/home/album"}  title={"Album"}/> */}
+                {/* <SideBarOptions className={"lib-sub"} Icon={EmojiPeopleIcon} href={"/home/artist"}  title={"Artist"}/>*/}
             </div>
             {/* <div className="aside-bar-container playlist">
                 <p className={"p1"}>

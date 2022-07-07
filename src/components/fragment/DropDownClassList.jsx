@@ -11,24 +11,22 @@ const DropDownLanguageList = () => {
     const useStyle = useContext(ThemeContext);
 
     const listOfLanguage = [
-        "All",
-        "E1",
-        "E2",
-        "E3",
-        "E4",
-        "E5",
-        "E6",
-        "English",
+        
+        "習作本1",
+        "習作本2",
+        "習作本3",
+        "習作本4",
+        "習作本5",
+        "習作本6",
     ];
     const [selectedList, setSelectedList] = useState({
-        "All": false,
-        "E1": false,
-        "E2": false,
-        "E3": false,
-        "E4": false,
-        "E5": false,
-        "E6": false,
-        "English": false,
+        
+        "習作本1": false,
+        "習作本2": false,
+        "習作本3": false,
+        "習作本4": false,
+        "習作本5": false,
+        "習作本6": false,
     });
     const handleSelected = (val, selected) => {
         setSelectedList(prevState => {
@@ -53,7 +51,7 @@ const DropDownLanguageList = () => {
     return (
         <div style={useStyle.component} className="dropdown">
             <div className="dropdown-head">
-                <p>Pick the level of class you want to listen to</p>
+                <p>請選擇習作等級</p>
             </div>
             <div className={"lang-list"}>
                 {listOfLanguage.map((item) => {
@@ -64,7 +62,7 @@ const DropDownLanguageList = () => {
             </div>
             <div className={"button-div"}>
                 <Button onClick={handleLangSelect} style={useStyle.button.contained}>
-                    Update
+                    確定
                 </Button>
             </div>
         </div>
