@@ -62,7 +62,7 @@ class Login extends React.Component{
                                 name="email" 
                                 type="email" 
                                 id="email" 
-                                placeholder="enter email address" 
+                                placeholder="輸入電子郵件或帳號..." 
                                 onChange={this.handleChange} 
                                 value={this.state.email}
                                 />
@@ -72,7 +72,7 @@ class Login extends React.Component{
                                     name="password"
                                     type="password" 
                                     id="password" 
-                                    placeholder="enter password" 
+                                    placeholder="輸入密碼..." 
                                     onChange={this.handleChange} 
                                     value={this.state.password}
                                 />

@@ -19,7 +19,7 @@ import Button from "@material-ui/core/Button";
 
 function FooterMusicPlayer({music}) {
 
-    const [{id, name, author_name, img, musicName}, setCurrTrack] = useState(music);
+    const [{id, name, img, musicName}, setCurrTrack] = useState(music);
     const [isRepeatClicked, setRepeatClick] = useState(false);
     const [isPrevClicked, setPrevClicked] = useState(false);
     const [isNextClicked, setNextClicked] = useState(false);
@@ -150,8 +150,7 @@ function FooterMusicPlayer({music}) {
                     className="curr-music-container">
                 <div className="curr-music-details">
                     <Name name={name} className={"song-name"} length={name.length}/>
-                    <Name name={author_name} className={"author-name"}
-                          length={author_name.length}/>
+                    
                 </div>
             </Button>
             <div className="playback-controls">

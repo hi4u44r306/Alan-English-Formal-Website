@@ -15,8 +15,6 @@ const Search = () => {
         setSearchResult(playlists.filter((i) => (
             (i.name.toLowerCase().startsWith(search))
             ||
-            (i.author_name.toLowerCase().startsWith(search))
-            ||
             (i.musicName.toLowerCase().startsWith(search))
             ||
             (i.lang && i.lang.toLowerCase().startsWith(search))
