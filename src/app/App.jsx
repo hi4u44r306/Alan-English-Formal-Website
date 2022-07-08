@@ -1,4 +1,4 @@
-import React, {useEffect, Component} from "react";
+import React, {useEffect} from "react";
 import './App.scss';
 import Home from "../components/Pages/Home";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -7,7 +7,6 @@ import {ThemeContext, themes} from "../api/Theme";
 import musicDB from "../db/music";
 import {useDispatch, useSelector} from "react-redux";
 import {setPlaylist} from "../actions/actions";
-import fire from "../components/Pages/fire";
 
 const App = () => {
 

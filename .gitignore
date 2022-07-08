@@ -2,7 +2,6 @@
 
 .idea
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
 
@@ -28,5 +27,6 @@ src/api/SpotifyPlayer.js
 src/api/swl.js
 
 .env
+/node_modules
 
 src/del.json
